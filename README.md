@@ -31,11 +31,11 @@ In summary, consider a struct of arrays when optimizing for performance in a hig
 
 DAXPY stands for "Double-Precision A·X Plus Y." It is a well-known operation in linear algebra, particularly used in the context of vector and matrix computations. The DAXPY operation computes the result of multiplying a scalar \( a \) by a vector \( X \) and then adding that result to another vector \( Y \). Mathematically, it can be expressed as:
 
-Y := a * X + Y ]
+Y := a * X + Y 
 
 Here:
 -  'a' is a scalar,
-- 'X' and Y are vectors of the same size,
+- 'X' and 'Y' are vectors of the same size,
 - The operation updates Y with the new computed values.
 
 DAXPY is commonly used in high-performance computing and is part of the BLAS (Basic Linear Algebra Subprograms) library, which provides efficient implementations of various linear algebra operations. It’s particularly efficient for vector operations due to its simplicity and the ability to exploit parallelism in modern hardware.

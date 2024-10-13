@@ -1,7 +1,7 @@
 # daxpy-via-simt-with-soa
 Using a Struct of arrays and single instruction multiple thread strategy to perform double precision a*x+y large amounts of data efficiently in c++
 
-Why:
+** Why use SIMT + SoA:
 
 Using a struct of arrays (SoA) can be advantageous in multithreaded scenarios, especially with a large number of threads, for several reasons:
 
@@ -27,7 +27,8 @@ When Not to Use:
 In summary, consider a struct of arrays when optimizing for performance in a highly parallelized environment, particularly if memory access patterns and data locality are critical to your application's efficiency.
 
 
-What is Daxpy:
+** What is Daxpy:
+
 DAXPY stands for "Double-Precision A·X Plus Y." It is a well-known operation in linear algebra, particularly used in the context of vector and matrix computations. The DAXPY operation computes the result of multiplying a scalar \( a \) by a vector \( X \) and then adding that result to another vector \( Y \). Mathematically, it can be expressed as:
 
 \[ Y := a \cdot X + Y \]

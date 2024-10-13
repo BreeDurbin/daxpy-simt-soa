@@ -1,4 +1,4 @@
-# daxpy-via-simt-with-soa
+# daxpy-simt-soa
 Using a Struct of arrays and single instruction multiple thread strategy to perform double precision a*x+y large amounts of data efficiently in c++
 
 # Why use SIMT + SoA:

@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 
     vector<jthread> threads;
     for(int i=0; i<thread_count; i++){
+        cout << "Spinning up thread i: " << i << endl;
         threads.push_back(
             jthread{[]{
             int s = i*interval_size;
@@ -49,6 +50,15 @@ int main(int argc, char *argv[])
             }};
         )
     }
+
+    for(int i=0; i<threads.size(); i++){
+        thread.join();
+        cout << "Thread: " << i << " processing finished." << endl;
+    }
+
+    //print out all results into a file
+
+    cout << "Complete" << endl;
  
     return 0;
 }

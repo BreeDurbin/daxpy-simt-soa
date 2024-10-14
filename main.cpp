@@ -2,8 +2,8 @@
 
 using namespace std;
 
-struct SOA_DAXPY() : x(
-    TestStruct(int n) : a(n), X(n), Y1(n), Y2(n), s(n) {}
+struct SOA_DAXPY(){
+    SOA_DAXPY(int n) : a(n), X(n), Y1(n), Y2(n), s(n) {}
     double a;
     vector<double> X;
     vector<double> Y1;

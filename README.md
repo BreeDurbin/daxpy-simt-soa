@@ -39,3 +39,11 @@ Here:
 - The operation updates Y with the new computed values.
 
 DAXPY is commonly used in high-performance computing and is part of the BLAS (Basic Linear Algebra Subprograms) library, which provides efficient implementations of various linear algebra operations. It’s particularly efficient for vector operations due to its simplicity and the ability to exploit parallelism in modern hardware.
+
+# Usage
+
+```
+g++ -std=c++20 -o simt main.cpp
+chmod +x simt
+./simt
+```
